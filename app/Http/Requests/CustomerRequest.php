@@ -31,9 +31,6 @@ class CustomerRequest extends FormRequest
         }
 
         return $rules;
-        return [
-            'role' => ['required', Rule::enum(UserRole::class)],
-        ];
     }
 }
 
